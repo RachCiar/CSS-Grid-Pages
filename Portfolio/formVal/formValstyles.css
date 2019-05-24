@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 30, 2019, 4:48:43 PM
+    Author     : rciarl8967
+*/
+
+#contact label{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+}
+#contact_submit{
+	padding-left: 100px;
+}
+#contact div{
+	margin-top: 1em;
+}
+textarea{
+	vertical-align: top;
+	height: 5em;
+}
+
+/*-----------ERROR CSS -----------------*/
+.error{
+	display: none;
+	margin-left: 10px;
+}		
+
+.error_show{
+	color: red;
+	margin-left: 10px;
+}
+
+/*-----------REAL TIME VALIDATION-----------------*/
+
+input.invalid, textarea.invalid{
+	border: 2px solid red;
+}
+
+input.valid, textarea.valid{
+	border: 2px solid green;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Lotto Number Generator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="lottostyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Chakra+Petch|Great+Vibes|Lobster" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+                
+        <hr>
+
+        <!--This is the body of the page -->
+        <div class="gameBox">
+            <h1>Lottery Number Generator</h1>
+           
+                <p class="lottoBox" id="lotto-0" ></p>
+                <p class="lottoBox" id="lotto-1"></p>
+                <p class="lottoBox" id="lotto-2"></p>
+                <p class="lottoBox" id="lotto-3"></p>
+                <p class="lottoBox" id="lotto-4"></p>
+                <p id="pBallScript">Power Ball</p>
+                <p class="powerball" id="lotto-5"></p> 
+                <br>
+                <br>
+                <br> 
+            <form>
+                <button onclick="lottoGen(); return false;" class="allButtons">Generate</button>
+            </form>
+        </div>
+
+        <script type="text/javascript" >
+            function lottoGen() {
+                var i = 0; //Variable for increment
+                var d = 0; //Variable for decrement
+                var arr2 = [0, 0, 0, 0, 0, 0]; //6 array values. Begin at 0
+                arr2[5] = Math.floor(Math.random() * 26 + 1);   //Choose random number for position 5 in array
+                while (i <= 4) { //Perform loop while i <= 4
+                    arr2[i] = Math.floor(Math.random() * 69 + 1);
+                    d = i;
+                    while (d !== 0 && d <= 4) {
+                        d--;
+                        if (arr2[i] === arr2[d])
+                            i--;
+                    }
+                    i++;
+                }
+                document.getElementById("lotto-0").innerHTML = arr2[0]; //Print the array     
+                document.getElementById("lotto-1").innerHTML = arr2[1]; //Print the array     
+                document.getElementById("lotto-2").innerHTML = arr2[2]; //Print the array     
+                document.getElementById("lotto-3").innerHTML = arr2[3]; //Print the array     
+                document.getElementById("lotto-4").innerHTML = arr2[4]; //Print the array     
+                document.getElementById("lotto-5").innerHTML = arr2[5]; //Print the array
+                
+            }
+            ;
+         
+        </script>
+
+
+
+
+    </body>
+</html>

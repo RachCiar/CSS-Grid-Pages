@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Video buttons</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>How to make broth in an instant pot</h1>
+        <div> 
+  <button onclick="playPause()" class="buttons">Play/Pause</button> 
+  <button onclick="makeBig()" class="buttons">Big</button>
+  <button onclick="makeSmall()" class="buttons">Small</button>
+  <button onclick="makeNormal()" class="buttons">Normal</button>
+  <br><br>
+  
+  <video id="video1" width="420" controls>
+      
+    <source src="Instant_Pot.mp4" type="video/mp4">
+    
+    Your browser does not support HTML5 video.
+  </video>
+  </div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+vid.volume = 0.2;
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+<p>Video courtesy of <a href="https://www.youtube.com/watch?v=vCDn3HJrqm0" target="_blank">Instant Pot Chicken Bone Broth</a>.</p>
+    </body>
+</html>

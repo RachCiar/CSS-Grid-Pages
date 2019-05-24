@@ -1,0 +1,95 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 27, 2018, 12:48:14 PM
+    Author     : rachc
+*/
+/* 
+    Created on : Nov 8, 2018, 12:50:29 PM
+    Author     : rciarl8967
+Color Scheme: Red #ff1300; Yellow #ffeb00; Purple #3711bb; Green #00cc24 Light Yellow #faf39c
+*/
+*{
+    box-sizing: border-box;
+}
+/* Background color for wholepage */
+body{
+    background-color: #666666;/*dark grey */
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
+
+
+/* The On-click buttons for all pages*/
+.allButtons{
+    clear: both;
+    float: left;
+    background-color: #6f54cc;/* light purple*/
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-left: 2em;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+}
+.allButtons:hover{
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+/* Style of game box for all games and contact pages*/
+.gameBox{
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 85%;
+    height: 30em;
+    background-color: #faf39c;/*Light Yellow */
+
+}
+
+
+/* CSS for the Lotto Generator page */
+/* CSS for the Lotto Generator page */
+/* CSS for the Lotto Generator page */
+
+.lottoBox{ /*Class for the boxes that generate the random number */
+
+    margin: 0;
+    border-radius: 7px;
+    border: solid;
+    margin-right: 1em;
+    width: 2em;
+    height: 2em;   
+    font-size: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+/* ID for the "power Ball" text */
+#pBallScript {
+
+    margin: 0;
+    color: red;
+    font-weight: bold;
+    font-size: 150%;
+    width: 5em; 
+    display: inline-block;
+
+}
+/* Class for the powerball box */
+.powerball {
+
+    margin: 0;
+    border-radius: 7px;
+    border: solid;
+    border-color: red;
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+
+
+}

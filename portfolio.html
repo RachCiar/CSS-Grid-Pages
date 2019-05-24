@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style-main.css">
+    <link rel="stylesheet" type="text/css" href="style-grid.css">
+    <title>CSS-Grid Portfolio</title>
+</head>
+
+<body class="site">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <!-- ------------NAVBAR SECTION ----------->
+    <section class="navbar" id="mainNav">
+
+        <div id="logo">
+            <a><img id="logo1" src="img/RachelLogo-3.png"></a>
+        </div>
+        <nav id="links">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+
+            </ul>
+
+        </nav>
+
+    </section>
+    <!-- ------------PORTFOLIO SECTION ----------->
+    <section class="portfolio" id="portfolio">
+        <div class="parallax sticky">
+            <h1 class="par-title"><strong>Portfolio</strong></h1>
+
+        </div>
+        <ul class="cards" id=modal-link>
+            <!-- ------------Card one ----------->
+
+            <li class="card-item odd">
+                <a href="#modal-1">
+                    <figure class="card-content">
+                        <img src="img/js-game-ws300Wx261H.jpg" alt="JavaScript Website picture">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">JavaScript Game Website Project</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+
+            <!-- ------------Card Two ----------->
+
+            <li class="card-item even">
+                <a href="#modal-2">
+                    <figure class="card-content">
+                        <img src="img/jackjack300Wx261H.jpg" alt="Heart Logo">
+
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Jack Jack Attack</h3>
+
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+
+            <!-- ------------Card Three ----------->
+
+
+            <li class="card-item odd">
+                <a href="#modal-3">
+                    <figure class="card-content">
+                        <img src="img/StarWars300x261.jpg" alt="Heart Logo">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Star Wars</h3>
+
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <!-- ------------Card Four ----------->
+            <li class="card-item even">
+                <a href="#modal-4">
+                    <figure class="card-content">
+                        <img src="img/PHPicon300x261.jpg" alt="PHP Icon">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">PHP</h3>
+
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <!-- ------------Card Five ----------->
+            <li class="card-item odd">
+                <a href="#modal-5">
+                    <figure class="card-content">
+                        <img src="img/JavaIcon300x261.jpg" alt="java icon">
+                        <figcaption class="caption">
+                            <h3 class="caption-title"> Java Programs</h3>
+
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+
+            <!-- ------------Card Six ----------->
+            <li class="card-item even">
+                <a href="#modal-6">
+                    <figure class="card-content">
+                        <img src="img/jQuery-js-icon300x261.jpg" alt="jQuery and JS">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">JavaScript and jQuery</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <!-- ------------Card Seven ----------->
+
+            <li class="card-item odd">
+                <a href="#modal-7">
+                    <figure class="card-content">
+                        <img src="img/adobe-creative-cloud300Wx261H.png" alt="Heart Logo">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Adobe cc Projects</h3>
+
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <!-- ------------Card Eight ----------->
+            <li class="card-item even">
+                <a href="#">
+                    <figure class="card-content">
+                        <img src="img/Heart logo-grouped-300x261.jpg" alt="Heart Logo">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">This is the Caption Title</h3>
+
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+        </ul>
+
+    </section>
+
+    <!-- ------------FOOTER SECTION ----------->
+
+    <footer class="footer">
+        <figure class="small-logo">
+            <img src="img/RachelLogo-2.png" alt="rachel logo">
+        </figure>
+
+        <div class="copyrite">
+            <h5>&copy; rachelciarlante.com</h5>
+        </div>
+
+    </footer>
+    <!-- ------------Modal-1 ----------- -->
+    <div class="container modal-window" id="modal-1">
+        <div class="card-header">
+
+            <a href="#portfolio" title="Close" class="modal-close">Close &times;</a>
+            <h2>JavaScript Game Website</h2>
+        </div>
+        <div class="info">
+            <h2>Final project for Web II</h2>
+            <hr>
+            <img class="" src="img/js-game-ws300Wx261H.jpg" alt="jack jack">
+
+            <p>My classmate, Courtney Otto, and I developed a website for JavaScript games.</p>
+
+            <a href="https://rachciar.github.io/JS-GameWebsite/index.html" target="_blank" class="btn">See
+                View Website</a>
+            <a href="https://github.com/RachCiar/JS-GameWebsite" target="_blank" class="btn">View Code on GitHub</a>
+        </div>
+    </div> <!-- End of Modal 1-->
+
+    <!-- ------------Modal-2 ----------- -->
+    <div class="container modal-window" id="modal-2">
+        <div class="card-header">
+
+            <a href="#portfolio" title="Close" class="modal-close">Close &times;</a>
+            <h2>Jack Jack Attack</h2>
+        </div>
+        <div class="info">
+            <h2>Kinetic Typography made with Adobe After Effects</h2>
+            <hr>
+            <img class="" src="img/jackjack_205Wx281H.jpg" alt="jack jack">
+
+            <p>This was a class project. <br> This is a two minute video using
+                Kinetic Typography. Taken from Disney - Pixar's short film Jack-Jack Attack</p>
+
+            <a href="https://www.youtube.com/watch?v=bkIkh5Bfdwo" target="_blank" class="btn">See
+                Portfolio Piece</a>
+        </div>
+    </div> <!-- End of Modal 2-->
+
+    <!-- ------------Modal-3 ----------- -->
+    <div class="container modal-window" id="modal-3">
+        <div class="card-header">
+
+            <a href="#portfolio" title="Close" class="modal-close">Close &times;</a>
+            <h2>Star Wars</h2>
+        </div>
+        <div class="info">
+            <h2>Converting 2D pictures to 3D Space</h2>
+            <hr>
+            <img class="" src="img/StarWars300x261.jpg" alt="star wars">
+
+            <p>For this class project, I took 2D images from a popular movie and cut them out in
+                layers using Photo Shop then animated the layers in 3D space using After Effects.</p>
+
+            <a href="https://www.youtube.com/watch?v=EcZIRHFAq3g&t=2s" target="_blank" class="btn">See
+                Portfolio Piece</a>
+        </div>
+    </div> <!-- End of Modal 3-->
+
+    <!-- ------------Modal-4 ----------- -->
+    <div class="container modal-window" id="modal-4">
+        <div class="card-header">
+
+            <a href="#portfolio" title="Close" class="modal-close">Close &times;</a>
+        </div>
+        <div class="info">
+            <h2>PHP Programs and websites</h2>
+            <hr>
+            <img class="" src="img/PHPicon300x261.jpg" alt="star wars">
+            <h3>Nana's Recipe Site</h3>
+            <p>This is a site for recipes. This program was written using PHP, JavaScript, jQuery, and mySQL.</p>
+            <a href="" target="_blank" class="btn">See Website</a>
+            <a href="https://github.com/RachCiar/nanas_recipe_site_041719_restructured" target="_blank" class="btn">View
+                Code on GitHub</a>
+            <hr>
+            <h3>2 Player Rock Paper Scissors Game</h3>
+            <p>This program was written using PHP. It is a two player rock, paper, scissors
+                game. Hidden Inputs were used to pass information from one page to the next. </p>
+            <a href="Portfolio/rps/index.php" target="_blank" class="btn">See Program</a>
+            <a href="https://github.com/RachCiar/PHP-RockPaperScissors-2Player" target="_blank" class="btn">View Code
+                on
+                GitHub</a>
+            <hr>
+            <h3>PHP Trip Calculator</h3>
+            <p>This program calculates MPG.</p>
+            <a href="Portfolio/PHP-Trip-Calc/mpg.php" target="_blank" class="btn">See Program</a>
+            <a href="https://github.com/RachCiar/PHP-TripCalculator" target="_blank" class="btn">View Code on GitHub</a>
+            <hr>
+        </div>
+    </div> <!-- End of Modal 4-->
+    <!-- ------------Modal-5 ----------- -->
+    <div class="container modal-window" id="modal-5">
+        <div class="card-header">
+
+            <a href="#portfolio" title="Close" class="modal-close">Close &times;</a>
+        </div>
+        <div class="info">
+            <h2>Here are several programs written in Java.</h2>
+            <hr>
+            <img class="" src="img/JavaIcon300x261.jpg" alt="java icon">
+            <h3>Area of Shapes</h3>
+            <p>Java program that calculates the area of a circle, triangle, or square.</p>
+            <a href="https://github.com/RachCiar/AreaOfShapes" target="_blank" class="btn">See
+                Java Program</a>
+            <hr>
+            <h3>Java Dice Simulation</h3>
+            <p>This program simulates rolling a pair of dice 10,000 times and counts the *
+                number of timThis class simulates rolling
+                a pair of dice 10,000 times and counts the * number of times doubles of are
+                rolled for each different pair of doubles.</p>
+            <a href="https://github.com/RachCiar/Java-DiceSimulation" target="_blank" class="btn">See
+                Java Program</a>
+            <hr>
+            <p>This java program asks a number of questions for user input and stores it into a
+                simple text file.</p>
+            <a href="https://github.com/RachCiar/Java-Sample-App" target="_blank" class="btn">See
+                Java Program</a>
+            <hr>
+            <p>Java program to calculate a pizza order.</p>
+            <a href="https://github.com/RachCiar/Java-PizzaOrder1" target="_blank" class="btn">See
+                Java Program</a>
+            <hr>
+            <p>Java program that calculates the total cost of items from the user's input.</p>
+            <a href="https://github.com/RachCiar/Java-Total-Cost-Of-Items" target="_blank" class="btn">See Java
+                Program</a>
+            <hr>
+            <p>Java program that calculates MPG</p>
+            <a href="https://github.com/RachCiar/Java-CalcMPG" target="_blank" class="btn">See
+                Java Program</a>
+            <hr>
+            <p>This java program is a geomerty calculator.</p>
+            <a href="https://github.com/RachCiar/Java-GeometryCalc" target="_blank" class="btn">See
+                Java Program</a>
+            <hr>
+            <p>Java program that validates username and password.</p>
+            <a href="https://github.com/RachCiar/Java-UserPassVall" target="_blank" class="btn">See
+                Java Program</a>
+
+        </div>
+    </div> <!-- End of Modal 5-->
+
+    <!-- ------------Modal-6 ----------- -->
+    <div class="container modal-window" id="modal-6">
+        <div class="card-header">
+
+            <a href="#portfolio" title="Close" class="modal-close">Close &times;</a>
+            <h2>Star Wars</h2>
+        </div>
+        <div class="info">
+            <h2>jQuery and JavaScript Programs</h2>
+            <hr>
+            <img class="" src="img/jQuery-js-icon300x261.jpg" alt="jQuery and javascript">
+
+            <hr>
+            <h3>CSS-JS-Random Fortune 3D Boxes</h3>
+            <a href="https://codepen.io/artosCiarlante/pen/vMpRqw" target="_blank" class="btn">View code on Codepen</a>
+            <a href="https://github.com/RachCiar/CSS-JS-RandomFortune3Dboxes" target="_blank" class="btn">View Code on
+                GitHub</a><br><br>
+            <hr>
+            <h3>JavaScript Video Buttons</h3>
+            <p>Program using embeded video buttons.</p>
+            <a href="Portfolio/videoButtons/index.html" target="_blank" class="btn">View Program</a>
+            <a href="https://github.com/RachCiar/JS-VideoButtons" target="_blank" class="btn">View Code on
+                GitHub</a><br><br>
+            <hr>
+            <h3>jQuery Draggable/Sortable Boxes</h3>
+            <a href="https://codepen.io/artosCiarlante/pen/mgzbEG" target="_blank" class="btn">View code on Codepen</a>
+            <a href="https://github.com/RachCiar/jQuery-DraggableDivBoxes" target="_blank" class="btn">View Code on
+                GitHub</a><br><br>
+            <hr>
+            <h3>JavaScript Lotto Number Generator</h3>
+            <a href="Portfolio/lotto/index.html" target="_blank" class="btn">View Program</a>
+            <a href="https://github.com/RachCiar/JS-LottoNumGen" target="_blank" class="btn">View Code on
+                GitHub</a><br><br>
+            <hr>
+            <h3>Simple JavaScript Form Validation</h3>
+            <a href="Portfolio/formVal/index.html" target="_blank" class="btn">View Program</a>
+            <a href="https://codepen.io/artosCiarlante/pen/YMbgjZ" target="_blank" class="btn">View Code on
+                CodePen</a><br><br>
+            <hr>
+            <h3>Simple JavaScript Form Validation Version 2</h3>
+            <a href="https://codepen.io/artosCiarlante/pen/MRdxGR" target="_blank" class="btn">View Code on
+                CodePen</a><br><br>
+            <hr>
+        </div>
+    </div> <!-- End of Modal 6-->
+
+    <!-- ------------Modal-7 ----------- -->
+    <div class="container modal-window" id="modal-7">
+        <div class="card-header">
+
+            <a href="#portfolio" title="Close" class="modal-close">Close &times;</a>
+            <h2>Star Wars</h2>
+        </div>
+        <div class="info">
+            <h2>Adobe cc projects</h2>
+            <hr>
+            <img class="" src="img/adobe-creative-cloud300Wx261H.png" alt="Adobe cc icon">
+
+            <hr>
+            <div>
+                <img src="img/adobe/HP-Movie_Poster100W.jpg" alt="Thumbnail of harry Potter movie poster">
+                <h3>PhotoShop - Harry Potter Poster</h3>
+            </div>
+
+            <p>For this assignment, we had to design a movie poster based on a popular movie. I chose Harry Potter.</p>
+
+            <a href="img/Adobe/portfolio-Harry Potter movie poster.jpg" target="_blank" class="btn">See
+                Assignment</a><br><br>
+            <hr>
+            <h3>JavaScript Video Buttons</h3>
+            <p>Program using embeded video buttons.</p>
+            <a href="Portfolio/videoButtons/index.html" target="_blank" class="btn">View Program</a>
+            <a href="https://github.com/RachCiar/JS-VideoButtons" target="_blank" class="btn">View Code on
+                GitHub</a><br><br>
+            <hr>
+            <h3>jQuery Draggable/Sortable Boxes</h3>
+            <a href="https://codepen.io/artosCiarlante/pen/mgzbEG" target="_blank" class="btn">View code on Codepen</a>
+            <a href="https://github.com/RachCiar/jQuery-DraggableDivBoxes" target="_blank" class="btn">View Code on
+                GitHub</a><br><br>
+            <hr>
+            <h3>JavaScript Lotto Number Generator</h3>
+            <a href="Portfolio/lotto/index.html" target="_blank" class="btn">View Program</a>
+            <a href="https://github.com/RachCiar/JS-LottoNumGen" target="_blank" class="btn">View Code on
+                GitHub</a><br><br>
+            <hr>
+            <h3>Simple JavaScript Form Validation</h3>
+            <a href="Portfolio/formVal/index.html" target="_blank" class="btn">View Program</a>
+            <a href="https://codepen.io/artosCiarlante/pen/YMbgjZ" target="_blank" class="btn">View Code on
+                CodePen</a><br><br>
+            <hr>
+            <h3>Simple JavaScript Form Validation Version 2</h3>
+            <a href="https://codepen.io/artosCiarlante/pen/MRdxGR" target="_blank" class="btn">View Code on
+                CodePen</a><br><br>
+            <hr>
+        </div>
+    </div> <!-- End of Modal 7-->
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+
+</html>

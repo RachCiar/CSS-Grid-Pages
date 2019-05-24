@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css?family=Hind|Poppins');
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+
+:root {
+    --body-color: #222;
+    --pre-color: #ddca7e;
+    --pre-background: #282c34;
+    --text-color-white: white;
+    --text-color-black: black;
+    --navbar-background: #7fa7c2;
+    --footer-background: #577284;
+    --blue-grey: #bbc6cd;
+    --light-grey: #eef0f2;
+    --maroon: #a11c1c;
+    --dark-red: #790202;
+    --light-red: hsla(0, 97%, 24%, 0.60);
+    --green: #5d8070;
+    --sage: #728457;
+    --purple: #62647f;
+    --hover-text: #282c34;
+    --cards-hover-background: hsl(0, 20%, 76%);
+}
+
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* -----------typography -------------  */
+
+html {
+    /* scroll-behavior: smooth; */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+
+}
+
+body {
+    margin: 0;
+}
+
+html,
+body {
+    font-family: 'Hind', sans-serif;
+    color: var(--body-color);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+p {
+    margin-bottom: 1.5em;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+
+
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------- General Styling------------- */
+
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+img {
+    display: block;
+}
+
+@media screen and (min-width: 600px) {
+    .about-text {
+        columns: 2;
+        column-gap: 2em;
+    }
+
+    .about-text p {
+        padding-top: 0;
+    }
+}
+
+/*------------Hero Image-------------- */
+
+.hero-image {
+    background-image: url("img/Heart\ logo600x400.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Chrome, Safari, Opera*/
+@-webkit-keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Standard Sytax*/
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.header-title {
+    font-family: 'Gugi', cursive;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 400%;
+    color: var(--text-color-black);
+    animation-name: fadeInOut;
+    animation-delay: 0s;
+    animation-duration: 12s;
+
+}
+
+
+.hero-image a {
+    color: var(--text-color-white);
+    font-size: 1.5em;
+    margin: auto;
+    font-style: italic;
+    background-color: var(--dark-red);
+    padding: .5em;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3), 0 5px 5px 0 rgba(0, 0, 0, 0.50);
+    border-radius: 10px;
+}
+
+.hero-image a:hover {
+    transform: scale(1);
+    transition-duration: 300ms;
+    cursor: pointer;
+    background-color: var(--dark-red);
+    padding: .75em;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3), 0 5px 5px 0 rgba(0, 0, 0, 0.50);
+
+}
+
+
+/* -------CSS FOR NAVBAR-------- */
+
+.navbar {
+    font-size: .9em;
+    color: var(--text-color-white);
+    background-color: var(--navbar-background);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.navbar a {
+    display: block;
+    padding: .4em 1em;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+#logo img {
+    justify-content: center;
+    max-height: 3em;
+    /* max-width: 16em;  */
+}
+
+.navbar a:focus,
+.navbar a:hover {
+    text-decoration: underline;
+    color: var(--hover-text);
+}
+
+/* ------ PARALLAX SECTIONS ------  */
+.parallax {
+    margin-top: 1em;
+    font-family: 'Gugi', cursive;
+    background-image: url("img/pic-of-code.jpg");
+    height: 100px;
+    min-height: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 100px !important;
+
+}
+
+.par-title {
+    text-align: center;
+    padding-top: 1em;
+    font-size: 2.0em;
+    color: var(--text-color-black);
+}
+
+/*--------------- Portfolio Cards-------------------- */
+.cards {
+    /* max-width: 25em; */
+    margin: 1em auto;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.cards a {
+    display: block;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+.card-item {
+    max-width: 25em;
+    margin: auto;
+}
+
+.card-item img:hover {
+    transform: scale(1.1);
+    transition-duration: 300ms;
+    cursor: pointer;
+
+}
+
+.caption {
+    padding: 1em;
+    font-size: 90%;
+    color: var(--text-color-black);
+}
+
+.caption-title {
+    margin: 0;
+    font-size: 1.4em;
+    line-height: 1em;
+}
+
+.caption p {
+    margin-top: .5em;
+    margin-bottom: 0;
+}
+
+.cards a:focus .caption,
+.cards a:hover .caption {
+    background: var(--light-red);
+}
+
+.card-content img {
+    margin: 1em 1em 0em 1em;
+    padding: 3em 3em 0em 3em;
+    width: 100%;
+    height: auto;
+}
+
+/* -------------- Modals Section ---------------- */
+
+/*This section displays and hides the modals*/
+.modal-window {
+    position: fixed;
+    background-color: var(--blue-grey);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4), 0 5px 5px 0 rgba(0, 0, 0, 0.50);
+}
+
+.container {
+    /* display: none; */
+    max-width: 500px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--blue-grey);
+    overflow: auto;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+/*This target allows the modal to display as a grid*/
+:target {
+
+    opacity: 1;
+    pointer-events: auto;
+
+
+}
+
+.card-header {
+    grid-area: card-header;
+    padding: 0;
+    margin: 0;
+
+}
+
+.card-header h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.info {
+    grid-area: info;
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    text-align: center;
+}
+
+.caption-title {
+    text-align: center;
+}
+
+/*Modal close icon */
+.modal-close {
+    color: var(--pre-background);
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.modal-close:hover {
+    color: var(--text-color-black);
+}
+
+
+.modal-window div:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: #fff;
+    padding: 1em 1.5em;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+
+/* -------------- About Section ---------------- */
+.about-img img {
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 5em;
+    width: 40%;
+    height: auto;
+
+}
+
+.about-text {
+    padding-left: 3em;
+    padding-right: 3em;
+
+}
+
+
+/* -------------- Resume Section -------------- */
+.resume {
+    background-color: var(--light-grey);
+}
+
+.resumeBtn  {
+
+    background-color: var(--dark-red);
+    padding: 1em 1.5em;
+    border-radius: 3px;
+    margin: 2em;
+    max-width: 30%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4), 0 5px 5px 0 rgba(0, 0, 0, 0.50);
+
+}
+
+.resumeBtn a {
+    color: white;
+    text-decoration-color: white;
+    text-decoration: none;
+    text-align: auto;
+}
+.resumeBtn:hover {
+    transform: scale(1.1);
+    transition-duration: 300ms;
+    cursor: pointer;
+    background-color: var(--light-red);
+
+}
+
+.section-1 {
+    padding: 5em;
+    background-color: var(--blue-grey);
+}
+
+.tech-skills {
+    background-color: var(--text-color-white);
+}
+
+
+.section-2 {
+    padding: 5em;
+    background-color: var(--light-grey);
+}
+
+.soft-skills {
+    background-color: var(--text-color-white);
+}
+
+
+.section-3 {
+    padding: 5em;
+    background-color: var(--light-grey);
+}
+
+.education {
+    background-color: var(--text-color-white);
+}
+
+
+.section-4 {
+    padding: 5em;
+    background-color: var(--blue-grey);
+}
+
+.employ-hist {
+    background-color: var(--text-color-white);
+}
+
+
+.section-5 {
+    padding: 5em;
+    background-color: var(--blue-grey);
+}
+
+.exp-high {
+    background-color: var(--text-color-white);
+}
+
+.section-6 {
+    padding: 5em;
+    background-color: var(--light-grey);
+}
+
+.awards {
+    background-color: var(--text-color-white);
+}
+
+ul.removeBullets li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*-------------Contact Section---------------------- */
+
+/* Style inputs with type="text", select elements and textareas */
+#contact-me input[type="text"],
+#contact-me input[type="email"],
+
+#contact-me textarea,
+#contact-me button[type="submit"] {
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact-me {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 25px 0;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact-me h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+#contact-me h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.contact-container {
+    width: 100%;
+    padding: 4em;
+}
+
+#contact-me input[type="text"],
+#contact-me input[type="email"],
+#contact-me textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact-me input[type="text"]:hover,
+#contact-me input[type="email"]:hover,
+#contact-me textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#contact-me textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact-me button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: var(--sage);
+    color: var(--text-color-white);
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact-me button[type="submit"]:hover {
+    background: var(--green);
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact-me button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+#contact-me input:focus,
+#contact-me textarea:focus {
+    outline: 0;
+    border: 1px solid var(--blue-grey);
+}
+
+::-webkit-input-placeholder {
+    color: var(--blue-grey);
+}
+
+:-moz-placeholder {
+    color: var(--blue-grey);
+}
+
+::-moz-placeholder {
+    color: var(--blue-grey);
+}
+
+:-ms-input-placeholder {
+    color: var(--blue-grey);
+}
+
+/* Add a background color and some padding around the form */
+
+
+/* Git Hub linkedin and codepen icons */
+.contact-icons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+}
+
+.contact-icons i {
+    padding: .5em;
+    font-size: 5em;
+}
+
+.fa-github-square {
+    color: #343333;
+}
+
+.fa-linkedin {
+    color: #2964ac;
+}
+
+.fa-codepen {
+    color: #343333;
+}
+
+.fa-github-square:hover,
+.fa-linkedin:hover,
+.fa-codepen:hover {
+    color: #d5d5d5;
+}
+
+/*---------FOOTER----------------------- */
+.footer {
+    background-color: var(--footer-background);
+    padding-left: 10em;
+}

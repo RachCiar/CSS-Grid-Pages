@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style-main.css">
+    <link rel="stylesheet" type="text/css" href="style-grid.css">
+    <title>CSS-Grid Portfolio</title>
+</head>
+
+<body class="site">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <!-- ------------NAVBAR SECTION ----------->
+    <section class="navbar" id="mainNav">
+
+        <div id="logo">
+            <a><img id="logo1" src="img/RachelLogo-3.png"></a>
+        </div>
+        <nav id="links">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+
+            </ul>
+
+        </nav>
+
+    </section>
+
+    <!-- ------------CONTACT SECTION ----------->
+    <section class="contact" id="contact">
+        <div class="parallax sticky">
+            <h1 class="par-title"><strong>Contact</strong></h1>
+        </div>
+        <div class="contact-container">
+            <form id="contact-me" action="" method="post">
+
+                <fieldset>
+                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <div class="contact-icons">
+
+        <a href="https://github.com/RachCiar" target="_blank"><i class="fab fa-github-square"></i></a>
+        <a href="https://www.linkedin.com/in/rachelciarlante?trk=people-guest_profile-result-card_result-card_full-click"
+            target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://codepen.io/artosCiarlante/" target="_blank"><i class="fab fa-codepen"></i></a>
+    </div>
+
+
+
+    <!-- ------------FOOTER SECTION ----------->
+
+    <footer class="footer">
+        <figure class="small-logo">
+            <img src="img/RachelLogo-2.png" alt="rachel logo">
+        </figure>
+
+        <div class="copyrite">
+            <h5>&copy; rachelciarlante.com</h5>
+        </div>
+
+    </footer>
+
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+
+</html>
