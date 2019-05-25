@@ -424,7 +424,7 @@ img {
 
 
 .modal-window div:not(:last-of-type) {
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 
 .btn {
@@ -434,6 +434,32 @@ img {
     text-decoration: none;
 }
 
+.ps-images{
+  
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:  
+    "thumbnail name"
+    "thumbnail title"
+}
+.ps-images p {
+    padding: 0;
+    margin: 0;
+}
+.thumbnail{  
+padding: 2em;
+margin: 0;
+ grid-area: thumbnail;
+ justify-self: center;
+ align-items: center;
+}
+.name{
+    grid-area: name;
+}
+.title{
+    grid-area: title;
+}
 
 /* -------------- About Section ---------------- */
 .about-img img {
