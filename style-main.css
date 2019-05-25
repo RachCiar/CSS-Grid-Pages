@@ -576,6 +576,22 @@ ul.removeBullets li {
 /*-------------Contact Section---------------------- */
 
 /* Style inputs with type="text", select elements and textareas */
+
+.contact-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ".email."
+    ".emailAddress.";
+    background-color: var(--light-grey);
+}
+.contact-email{
+    grid-area: email;
+}
+.contact-email-address{
+    grid-area: emailAddress;
+}
+
 #contact-me input[type="text"],
 #contact-me input[type="email"],
 
