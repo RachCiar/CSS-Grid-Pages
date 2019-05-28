@@ -517,6 +517,10 @@ margin: 0;
     background-color: var(--text-color-white);
 }
 
+.tech-skills h3 {
+    text-decoration: underline;
+}
+
 
 .section-2 {
     padding: 5em;
@@ -525,6 +529,9 @@ margin: 0;
 
 .soft-skills {
     background-color: var(--text-color-white);
+}
+.soft-skills h3 {
+    text-decoration: underline;
 }
 
 
@@ -537,6 +544,9 @@ margin: 0;
     background-color: var(--text-color-white);
 }
 
+.education h3 {
+    text-decoration: underline;
+}
 
 .section-4 {
     padding: 5em;
@@ -547,6 +557,9 @@ margin: 0;
     background-color: var(--text-color-white);
 }
 
+.employ-hist h3 {
+    text-decoration: underline;
+}
 
 .section-5 {
     padding: 5em;
@@ -557,6 +570,10 @@ margin: 0;
     background-color: var(--text-color-white);
 }
 
+.exp-high h3 {
+    text-decoration: underline;
+}
+
 .section-6 {
     padding: 5em;
     background-color: var(--light-grey);
@@ -564,6 +581,10 @@ margin: 0;
 
 .awards {
     background-color: var(--text-color-white);
+}
+
+.awards h3 {
+    text-decoration: underline;
 }
 
 ul.removeBullets li {
