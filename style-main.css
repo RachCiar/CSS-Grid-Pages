@@ -271,6 +271,7 @@ img {
     position: -webkit-sticky !important;
     position: sticky !important;
     top: 100px !important;
+    background-color: #f4ce42;
 
 }
 
