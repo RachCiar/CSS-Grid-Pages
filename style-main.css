@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Hind|Poppins');
 @import url('https://fonts.googleapis.com/css?family=Gugi');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
 
 :root {
     --body-color: #222;
@@ -77,6 +78,7 @@ body {
 
 }
 
+
 a {
     text-decoration: none;
 }
@@ -123,10 +125,119 @@ img {
     }
 }
 
+/*------------CSS for page transition---Not using this yet because it doesn't work---- */
+
+#apply {
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    z-index: 9;
+  } 
+
+
+
+#content {
+    position: relative;
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+    border: 3px solid #0076bf;
+   
+  }
+  
+  #content.appears {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: linear;
+    transition-delay: 0.5s;
+    width: 100%;
+    background-color: #fff;
+    /* z-index: 1; */
+    position: fixed; 
+    left: 0;
+    top: calc(50% - 2px);
+    height: 4px;
+    animation: appears 2s forwards;
+    
+  }
+
+ #content .appearsFinished {
+      position: static;
+  }
+
+  
+  @keyframes appears {
+    0% {
+      opacity: 1;
+      width: 0%;
+      height: 5px;
+    }
+  
+    50% {
+      width: 100%;
+      height: 5px;
+      left: 0%;
+    }
+  
+    75% {
+      width: 100%;
+      height: 5px;
+      top: 50%;
+    }
+    
+    100% {
+      opacity: 1;
+      width: 100%;
+      height: 1000vh;
+      left: 0%;
+      top: 0%;
+    }
+
+  }
+  
+  
+  @keyframes cross {
+    0% {
+      opacity: 1;
+      width: 0%;
+      height: 5px;
+      transform: rotate(-45deg);
+    }
+  
+    50% {
+      width: 100%;
+      height: 5px;
+      left: 0%;
+      transform: rotate(-45deg);
+    }
+    
+    60% {
+      transform: rotate(0deg);
+    }
+  
+    75% {
+      width: 100%;
+      height: 5px;
+      top: 50%;
+    }
+    
+    100% {
+      opacity: 1;
+      width: 100%;
+      height: 1000vh;
+      left: 0%;
+      top: 0%;
+    }
+
+    
+  }
+  
+
+
 /*------------Hero Image-------------- */
 
 .hero-image {
-    background-image: url("img/Heart\ logo600x400.jpg");
+    background-image: url("img/HeartLogoFaded.jpg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -179,17 +290,19 @@ img {
 }
 
 .header-title {
-    font-family: 'Gugi', cursive;
+    font-family: 'Dancing Script', cursive;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 400%;
-    color: var(--text-color-black);
+    font-size: 300%;
+    text-align: center;
+    color: #600100;
     animation-name: fadeInOut;
     animation-delay: 0s;
     animation-duration: 12s;
+    text-shadow:3px 6px 7px black;
 
 }
 
@@ -261,16 +374,15 @@ img {
 .parallax {
     margin-top: 1em;
     font-family: 'Gugi', cursive;
-    background-image: url("img/pic-of-code.jpg");
     height: 100px;
     min-height: 50px;
-    background-attachment: fixed;
+    /* background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: -webkit-sticky !important;
     position: sticky !important;
-    top: 100px !important;
+    top: 100px !important; */
     background-color: #f4ce42;
 
 }
@@ -767,5 +879,5 @@ fieldset {
 /*---------FOOTER----------------------- */
 .footer {
     background-color: var(--footer-background);
-    padding-left: 10em;
+    padding-left: 0;
 }

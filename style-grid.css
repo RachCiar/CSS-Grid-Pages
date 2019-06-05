@@ -11,25 +11,43 @@ Basic responsive layout for all browsers:
 .footer{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+	"logo copyrite"
+	"designed designed";
 
+}
+.small-logo{
+	grid-area: logo;
+}
+.designedWith{
+	grid-area: designed;
+}
+.copyrite {
+	grid-area: copyrite;
 }
 	/*-------hero image GRID------------- */
 
 	.hero-image {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas:  
-		"image image"
-		"title title"
-		"home portfolio"
-		"resume about"
-		"contact .";
+		grid-gap: 1em;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+			grid-template-areas:  
+			"image image"
+			"title title"
+			"statement statement"
+			" home portfolio"
+			"about resume"
+			"contact contact";
+		
 	}
+
 	
 	.logo1{
 		grid-area: image;
-		max-height: 3em;
-		
+		max-height: 2em;
+		margin: auto;
+			
 	}
 	
 	.link-home{
@@ -40,11 +58,24 @@ Basic responsive layout for all browsers:
 	.header-title{
 		grid-area: title;
 		
+		
 	}
 	
 	.link-port{
 		grid-area: portfolio;
 		
+	}
+
+	.statement {
+		grid-area: statement;
+		font-family: 'Dancing Script', cursive;
+		font-size: 200%;
+		text-align: center;
+		font-weight: bold;
+		color: var(--footer-background);
+		justify-self: center;
+		padding: 1em;
+
 	}
 	
 	.link-about{
@@ -61,7 +92,115 @@ Basic responsive layout for all browsers:
 	 
 	}
 
- 
+
+
+/*------------Grid layout for resume sections */
+	.section-list{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"sec-1"
+		"sec-2"
+		"sec-4"
+		"sec-3"
+		"sec-5"
+		"sec-6";
+	}
+
+	.section-1{
+		grid-area: sec-1;
+		padding: 1em;
+		margin: 0;
+	}
+	.section-2{
+		grid-area: sec-2;
+		padding: 1em;
+		margin: 0;
+	}
+	.section-3{
+		grid-area: sec-3;
+		padding: 1em;
+		margin: 0;
+	}
+	.section-4{
+		grid-area: sec-4;
+		padding: 1em;
+		margin: 0;
+	}
+	.section-5{
+		grid-area: sec-5;
+		padding: 1em;
+		margin: 0;
+	}
+	.section-6{
+		grid-area: sec-6;
+		padding: 1em;
+		margin: 0;
+	}
+ /*------- Layout for modals-----------  */
+	.container{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:  
+		"header"
+		"title"
+		"image"
+		"info"
+	}
+.card-header {
+	grid-area: header;
+}
+.card-title {
+	grid-area: title;
+}
+.card-image {
+	grid-area: image;
+}
+.info{
+	grid-area: info;
+}
+
+ /* CSS Grid for modal #6 This is a grid within the modal*/
+.ps-images{
+  
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:  
+    "name"
+    "title"
+    "thumbnail";
+}
+
+.name{
+    grid-area: name;
+}
+.title{
+    grid-area: title;
+}
+.thumbnail{  
+	padding: 2em;
+	margin: 0;
+	 grid-area: thumbnail;
+	 justify-self: center;
+	 align-items: center;
+	}
+
+	/*--------------Display Grid for About Section ------ */
+
+	.about-content{
+		display: grid;
+		grid-template-areas:  
+		"image"
+		"text";
+	}
+	.about-img{
+		grid-area: image;
+	
+	}
+	.about-text{
+		grid-area: text;
+	}
 /*------- Media Query Hamburger Menu-----------  */
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -106,7 +245,15 @@ Basic responsive layout for all browsers:
 		text-align: left;
 		height: 70px;
 	}
-
+	.about-img img{
+		width: 100%;
+		margin: auto;
+		
+	}
+	.resumeBtn{
+		max-width: 60%;
+	}
+	
 }
 
 
@@ -123,7 +270,7 @@ CSS Grid layout for wider screens, when browser supports grid:
 		}
 		.hero-image a{
 			color:var(--text-color-white);
-			 font-size: 2em;
+			 font-size: 1.5em;
 			margin: auto;
 			font-style: italic;
 			background-color: var(--dark-red);
@@ -137,6 +284,9 @@ CSS Grid layout for wider screens, when browser supports grid:
 			
 		}
 
+		
+		
+
 	}
 
 	@media screen and (min-width: 50em) {
@@ -149,17 +299,7 @@ CSS Grid layout for wider screens, when browser supports grid:
 			max-height: 7em;
 			
 		}
-		.hero-image a{
-			color:var(--text-color-white);
-			 font-size: 2em;
-			margin: auto;
-			font-style: italic;
-			background-color: var(--light-red);
-			padding: 1.5em;
-			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3), 0 5px 5px 0 rgba(0, 0, 0, 0.50);
-			border-radius: 60px;
-		 }
-	
+		
 		.cards {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
@@ -173,49 +313,59 @@ CSS Grid layout for wider screens, when browser supports grid:
 			"sec-3 sec-4"
 			"sec-5 sec-6";
 		}
+		
+	
+		.hero-image a {
+			color: var(--text-color-black);
+			font-size: 1em;
+			margin: auto;
+			font-style: italic;
+			background-color: var(--light-grey);
+			padding: 1em;
+			border-radius: 0px;
+		}
+		
+		.hero-image a:hover {
+			/* transform: scale(2); */
+			transition-duration: 300ms;
+			cursor: pointer;
+			background-color: var(--light-grey);
+			padding: 0;
+			border-radius: none;
+		
+		}
+	
 
-		.section-1{
-			grid-area: sec-1;
-			padding: 1em;
-			margin: 0;
-		}
-		.section-2{
-			grid-area: sec-2;
-			padding: 1em;
-			margin: 0;
-		}
-		.section-3{
-			grid-area: sec-3;
-			padding: 1em;
-			margin: 0;
-		}
-		.section-4{
-			grid-area: sec-4;
-			padding: 1em;
-			margin: 0;
-		}
-		.section-5{
-			grid-area: sec-5;
-			padding: 1em;
-			margin: 0;
-		}
-		.section-6{
-			grid-area: sec-6;
-			padding: 1em;
-			margin: 0;
-		}
-
-		 .hero-image {
+		.hero-image {
 			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 1fr 1fr 1fr 1fr;
-			grid-template-areas:  
-			" image image "
-			" title portfolio"
-			"home resume"
-			"about contact "
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr ;
+			grid-template-areas: 
+			"image image image image image" 
+			" home portfolio about resume contact"
+			"title title title title title"
+				"statement statement statement statement statement"
 			
 		}
+.header-title{
+	font-size:525%;
+	
+}
+
+.statement{
+	font-size: 250%;
+	
+}
+
+
+
+.footer{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+	"logo designed copyrite";
+
+}
 		
 	}
 
@@ -233,21 +383,12 @@ CSS Grid layout for wider screens, when browser supports grid:
 			"sec-3 sec-4 sec-6"
 		}
 
-		.hero-image {
-			display: grid;
-			grid-template-columns: 25% 1fr 25%;
-			grid-template-rows: 1fr 1fr 1fr 1fr;
-			grid-template-areas:  
-			"image image . "
-			" home title portfolio"
-			"about title resume"
-			". contact ."
-		}
+		
 
 		.logo1{
 			grid-area: image;
 			max-height: 8em;
-			
+		
 		}
 	}
 

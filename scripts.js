@@ -1,4 +1,23 @@
+//Not using this yet because it doesn't work.
 
+// function applyAnimation( e ) {
+  
+//   var content = document.getElementById("content");
+  
+//   content.className = "";
+//   content.classList.add( e.target.id );
+//   removeAppears();
+// }
+
+// function removeAppears(){
+
+//   $("content").remove("appears");
+  
+//   }
+    
+// document.getElementById("cross").addEventListener( "onload", applyAnimation, false );
+
+// document.getElementById("content").classList.add("appears");
 
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
